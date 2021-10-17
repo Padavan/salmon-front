@@ -3,7 +3,6 @@ export default (config, env, helpers) => {
     {
       path: '/api/**',
       target: 'http://localhost:3000/',
-      // ...any other stuff...
     }
   ];
 }

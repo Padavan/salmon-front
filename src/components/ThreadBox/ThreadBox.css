@@ -1,0 +1,21 @@
+.post {
+  border:  1px solid black;
+  display:  flex;
+  padding:  0.5rem;
+  min-height:  100px;
+  max-height:  100px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.content * {
+  margin:  0;
+}
+
+.content p {
+  flex:  1;
+}
