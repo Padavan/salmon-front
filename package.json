@@ -6,9 +6,13 @@
   "scripts": {
     "build": "preact build",
     "serve": "sirv build --port 8080 --cors --single",
-    "dev": "preact watch",
+    "start": "node build.js",
     "lint": "eslint src",
     "test": "jest"
+  },
+  "engines": {
+    "npm": ">=0.0.0 <10.0.0",
+    "node": ">=18.0.0 <19.0.0"
   },
   "eslintConfig": {
     "extends": "preact",
@@ -17,8 +21,10 @@
     ]
   },
   "devDependencies": {
+    "@types/node": "^20.4.9",
     "enzyme": "^3.10.0",
     "enzyme-adapter-preact-pure": "^2.0.0",
+    "esbuild": "^0.18.17",
     "eslint": "^6.0.1",
     "eslint-config-preact": "^1.1.0",
     "jest": "^24.9.0",
@@ -27,9 +33,11 @@
     "sirv-cli": "1.0.3"
   },
   "dependencies": {
+    "esbuild-envfile-plugin": "^1.0.5",
     "preact": "^10.3.2",
     "preact-render-to-string": "^5.1.4",
-    "preact-router": "^3.2.1"
+    "preact-router": "^3.2.1",
+    "typescript": "^5.0.4"
   },
   "jest": {
     "preset": "jest-preset-preact",

@@ -1,21 +1,23 @@
-.post {
+.thread-box {
   border:  1px solid black;
   display:  flex;
   padding:  0.5rem;
+
   min-height:  100px;
   max-height:  100px;
+  margin-bottom: 1rem;
 }
 
-.content {
+.thread-box__content {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
-.content * {
+.thread-box__content * {
   margin:  0;
 }
 
-.content p {
+.thread-box__content p {
   flex:  1;
 }

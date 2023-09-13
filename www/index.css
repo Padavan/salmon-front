@@ -1,0 +1,148 @@
+/* src/style.css */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #FAFAFA;
+  font-family:
+    "Helvetica Neue",
+    arial,
+    sans-serif;
+  font-weight: 400;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box;
+}
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+button {
+  max-width: 300px;
+  line-height: 1.5rem;
+}
+
+/* src/components/Header/Header.css */
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 56px;
+  padding: 0;
+  background: #673AB7;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 50;
+}
+.header h1 {
+  float: left;
+  margin: 0;
+  padding: 0 15px;
+  font-size: 24px;
+  line-height: 56px;
+  font-weight: 400;
+  color: #FFF;
+}
+.header nav {
+  float: right;
+  font-size: 100%;
+}
+.header nav a {
+  display: inline-block;
+  height: 56px;
+  line-height: 56px;
+  padding: 0 15px;
+  min-width: 50px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0);
+  text-decoration: none;
+  color: #FFF;
+  will-change: background-color;
+}
+.header nav a:hover,
+.header nav a:active {
+  background: rgba(0, 0, 0, 0.2);
+}
+.header nav a.header__active {
+  background: rgba(0, 0, 0, 0.4);
+}
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+/* src/components/Home/Home.css */
+
+/* src/components/Catalog/Catalog.css */
+.catalog-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.catalog-container__center {
+  margin: 0 auto;
+}
+
+/* src/components/CreateThread/CreateThread.css */
+.create-thread__container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 320px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+.create-thread__buttonContainer {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+}
+.create-thread__title {
+  margin-bottom: 1rem;
+}
+.create-thread__text {
+  resize: none;
+}
+
+/* src/components/ThreadBox/ThreadBox.css */
+.thread-box {
+  border: 1px solid black;
+  display: flex;
+  padding: 0.5rem;
+  min-height: 100px;
+  max-height: 100px;
+  margin-bottom: 1rem;
+}
+.thread-box__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.thread-box__content * {
+  margin: 0;
+}
+.thread-box__content p {
+  flex: 1;
+}
+
+/* src/components/Thread/Thread.css */
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.comments-container textarea {
+  min-width: 320px;
+  max-width: 560px;
+  margin: 0 auto;
+  resize: none;
+  margin-top: 1rem;
+}

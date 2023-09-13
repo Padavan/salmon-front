@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "declaration": true,
+    "declarationDir": "./dist/types",
+    "allowJs": true,
+    "strict" : true,
+    "noImplicitAny" : true,
+    "strictNullChecks" : true,
+    "strictFunctionTypes" : true,
+    "strictBindCallApply" : true,
+    "strictPropertyInitialization" : true,
+    "noImplicitThis" : true,
+    "useUnknownInCatchVariables" : true,
+    "alwaysStrict" : true,
+    "noUnusedLocals" : true,
+    "noUnusedParameters" : true,
+    "exactOptionalPropertyTypes" : true,
+    "noImplicitReturns" : true,
+    "noFallthroughCasesInSwitch" : true,
+    "noUncheckedIndexedAccess" : true,
+    "noImplicitOverride" : true,
+    "noPropertyAccessFromIndexSignature" : true,
+    "isolatedModules": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "types": ["preact", "node"],
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noEmit": false,
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  },
+  "files": [
+    "src/index.tsx",
+    "src/types/env.d.ts"
+  ],
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "www",
+    "dist",
+    ".tmp",
+    "**/*.test.tsx?"
+  ]
+}

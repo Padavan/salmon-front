@@ -1,0 +1,9 @@
+.catalog-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-container__center {
+  margin: 0 auto;
+}

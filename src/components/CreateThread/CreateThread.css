@@ -1,4 +1,4 @@
-.container {
+.create-thread__container {
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -8,16 +8,16 @@
   margin: 0 auto;
 }
 
-.buttonContainer {
+.create-thread__buttonContainer {
   display: flex;
   padding: 1rem;
   justify-content: center;
 }
 
-.title {
+.create-thread__title {
   margin-bottom: 1rem;
 }
 
-.text {
+.create-thread__text {
   resize: none;
 }

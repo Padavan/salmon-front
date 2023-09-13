@@ -1,9 +1,10 @@
-import { h } from 'preact';
-import styles from './Thread.css';
+import { FunctionalComponent } from 'preact';
+import './Thread.css';
 import { useState, useEffect } from 'preact/hooks';
 import { Link } from 'preact-router/match';
 
-export const Thread = (props) => {
+
+export const Thread: FunctionalComponent = (props) => {
   const [newComment, setNewComment] = useState('');
   const [fetching, setFetching] = useState(false);
   console.log('props', props);
@@ -33,16 +34,22 @@ export const Thread = (props) => {
     setFetching(false);
   }
 
+  const handleComment = (e: Event) => {
+    if (e.target instanceof HTMLInputElement) {
+      setNewComment(e.target.value)
+    }
+  }
+
   return (
     <div>
 
       <Link href={`/catalog`}>
         Go to catalogs
       </Link>
-      <div className={styles.commentsContainer}>
+      <div className="comments-container">
       
-        <div className={styles.addCommentBox}>
-          <textarea value={newComment} onChange={e => setNewComment(e.target.value)} disabled={fetching} />
+        <div className="comments-container">
+          <textarea value={newComment} onChange={handleComment} disabled={fetching} />
           <button onClick={addComment}>Add</button>
         </div>  
       </div>
